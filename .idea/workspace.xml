@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40024a37-e23b-49e8-a404-525d02da1269" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="0e6ad580-88ef-4d2f-9baf-58a55a5d7ebe" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="0e6ad580-88ef-4d2f-9baf-58a55a5d7ebe" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="d6e6de72-56b6-4cf4-9150-da7fff3e608d" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/ssg79/OneDrive/Desktop/INNsight" value="3DAO8qOLpCOiH0vP04ez7hcB9xL" />
+      <entry key="_C:/Users/ssg79/OneDrive/Desktop/INNsight_Modified" value="3DX0lF9cSBkobzm5cPM0KPOi5IJ" />
+    </persistenceIdMap>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3DAO8qOLpCOiH0vP04ez7hcB9xL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.java.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hotel_ai [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hotel_ai [org.apache.maven.plugins:maven-dependency-plugin:3.6.0:copy-dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.hotel_ai [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ssg79/OneDrive/Desktop/INNsight_Modified&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main.java" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.hotel.hotel_ai.Main" />
+      <module name="hotel_ai" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\ssg79\OneDrive\Desktop\INNsight\target\classes;C:\Users\ssg79\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ssg79\.m2\repository\org\xerial\sqlite-jdbc\3.45.1.0\sqlite-jdbc-3.45.1.0.jar;C:\Users\ssg79\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ssg79\.m2\repository\org\openjfx\javafx-base\21.0.2\javafx-base-21.0.2-win.jar;C:\Users\ssg79\.m2\repository\org\openjfx\javafx-graphics\21.0.2\javafx-graphics-21.0.2-win.jar;C:\Users\ssg79\.m2\repository\org\openjfx\javafx-controls\21.0.2\javafx-controls-21.0.2-win.jar;C:\Users\ssg79\.m2\repository\org\openjfx\javafx-fxml\21.0.2\javafx-fxml-21.0.2-win.jar;C:\Users\ssg79\.m2\repository\org\openjfx\javafx-web\21.0.2\javafx-web-21.0.2-win.jar;C:\Users\ssg79\.m2\repository\org\openjfx\javafx-media\21.0.2\javafx-media-21.0.2-win.jar" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="INNsight" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40024a37-e23b-49e8-a404-525d02da1269" name="Changes" comment="" />
+      <created>1777721254411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777721254411</updated>
+      <workItem from="1777721254416" duration="8035000" />
+      <workItem from="1777744040197" duration="2823000" />
+      <workItem from="1777809105493" duration="1192000" />
+      <workItem from="1777815371325" duration="3955000" />
+      <workItem from="1777821196362" duration="1330000" />
+      <workItem from="1777823465428" duration="4850000" />
+      <workItem from="1777834800143" duration="2961000" />
+      <workItem from="1777839095953" duration="456000" />
+      <workItem from="1777839842308" duration="521000" />
+      <workItem from="1777871794004" duration="1979000" />
+      <workItem from="1778002599351" duration="821000" />
+      <workItem from="1778005660325" duration="1351000" />
+      <workItem from="1778009657606" duration="89000" />
+      <workItem from="1778009896982" duration="1569000" />
+      <workItem from="1778015800341" duration="1658000" />
+      <workItem from="1778017761234" duration="2797000" />
+      <workItem from="1778020645905" duration="294000" />
+      <workItem from="1778082873705" duration="371000" />
+      <workItem from="1778083388672" duration="187000" />
+      <workItem from="1778235208963" duration="1579000" />
+      <workItem from="1778412856090" duration="126000" />
+      <workItem from="1778413063067" duration="110000" />
+      <workItem from="1778413254078" duration="284000" />
+      <workItem from="1778413567517" duration="619000" />
+      <workItem from="1778414297925" duration="225000" />
+      <workItem from="1778414578938" duration="5546000" />
+      <workItem from="1778489800284" duration="2396000" />
+      <workItem from="1778492317446" duration="315000" />
+      <workItem from="1778492661338" duration="446000" />
+      <workItem from="1778511178168" duration="4107000" />
+      <workItem from="1778561883944" duration="3284000" />
+      <workItem from="1778664129510" duration="854000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hotel/hotel_ai/Main.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
