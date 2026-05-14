@@ -7,7 +7,7 @@
 
 ## Overview
 
-INNsight is a desktop hotel management system that combines a JavaFX UI with an AI-powered chatbot (Botpress) for natural-language hotel operations. Staff can manage rooms, reservations, and guests ma...
+INNsight is a desktop hotel management system that combines a JavaFX UI with an AI-powered chatbot (Botpress) for natural-language hotel operations. Staff can manage rooms, customers can book rooms, modify and cancel rooms.
 
 The codebase strictly follows **GRASP patterns** (Information Expert, Creator, Controller, Low Coupling, High Cohesion, Polymorphism, Pure Fabrication, Indirection, Protected Variation) and a **layere...
 
