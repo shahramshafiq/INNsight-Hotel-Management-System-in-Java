@@ -7,9 +7,9 @@
 
 ## Overview
 
-INNsight is a desktop hotel management system that combines a JavaFX UI with an AI-powered chatbot (Botpress) for natural-language hotel operations. Staff can manage rooms, reservations, and guests manually through the dashboard, or let the AI handle it through conversation.
+INNsight is a desktop hotel management system that combines a JavaFX UI with an AI-powered chatbot (Botpress) for natural-language hotel operations. Staff can manage rooms, reservations, and guests ma...
 
-The codebase strictly follows **GRASP patterns** (Information Expert, Creator, Controller, Low Coupling, High Cohesion, Polymorphism, Pure Fabrication, Indirection, Protected Variation) and a **layered architecture** (UI → Controller → Model/Repository → Database).
+The codebase strictly follows **GRASP patterns** (Information Expert, Creator, Controller, Low Coupling, High Cohesion, Polymorphism, Pure Fabrication, Indirection, Protected Variation) and a **layere...
 
 ---
 
@@ -162,121 +162,53 @@ Follow these steps every time you update the source code and want to regenerate 
 
 ---
 
-### Step 1 — Build the JAR in IntelliJ
-
-Open the Maven panel on the right side of IntelliJ:
-- Maven → Lifecycle → **clean** — double-click, wait for `BUILD SUCCESS`
-- Maven → Lifecycle → **package** — double-click, wait for `BUILD SUCCESS`
-
----
-
-### Step 2 — Copy Dependencies
-
-In the Maven panel:
-- Maven → Plugins → dependency → **dependency:copy-dependencies** — double-click, wait for `BUILD SUCCESS`
-
-This puts all `.jar` files into `target\libs\`
-
----
-
-### Step 3 — Copy Main JAR into libs
-
-In the IntelliJ terminal (bottom of IntelliJ):
-
-```
-copy target\hotel_ai-1.0-SNAPSHOT.jar target\libs\
-```
-
----
-
-### Step 4 — Close the App if it is Running
-
-If INNsight is currently open, close it completely before the next step. If it won't close normally:
-
-- Press `Ctrl + Alt + Delete` → Task Manager
-- Find **INNsight** → End Task
-- Find any **Java** process → End Task
-
-This is important. If the app is running, the next step will fail because Windows locks the files.
-
----
-
-### Step 5 — Delete the Old Build Output
-
-In the IntelliJ terminal:
-
-```
-Remove-Item -Recurse -Force -Path "INNsight_App"
-```
-
-Confirm it is gone:
-
-```
-Test-Path INNsight_App
-```
-
-Should say `False`. If it still says `True`, the app is still running — go back to Step 4.
-
----
-
-### Step 6 — Run jpackage
-
-```
-jpackage --input target\libs --main-jar hotel_ai-1.0-SNAPSHOT.jar --main-class com.hotel.hotel_ai.Main --name INNsight --app-version 1.0 --type app-image --dest INNsight_App
-```
-
-Wait for it to finish with no errors.
-
----
-
-### Step 7 — Recreate the Desktop Shortcut
-
-- Open File Explorer and go to `INNsight_App\INNsight\`
-- Right-click `INNsight.exe` → **Send to** → **Desktop (create shortcut)**
-- Go to the Desktop, delete the old INNsight shortcut
-- Rename the new shortcut to `INNsight`
-
-Double-click it — the updated app opens fullscreen.
-
----
-
+<!-- PROJECT STRUCTURE SECTION BEGINS -->
 ## Project Structure
 
 ```
-INNsight/
-├── src/main/java/com/hotel/hotel_ai/
-│   ├── Main.java                            ← Entry point
-│   ├── ui/
-│   │   └── ChatbotUI.java                   ← All UI screens and logic (GRASP: Indirection)
-│   ├── controller/
-│   │   ├── IAIService.java                  ← AI service interface (GRASP: Protected Variation)
-│   │   ├── AIEngine.java                    ← Botpress integration (GRASP: Indirection)
-│   │   ├── RoomController.java              ← Room use-case handler (GRASP: Controller)
-│   │   ├── ReservationController.java       ← Booking use-case handler (GRASP: Controller, Creator)
-│   │   ├── CustomerController.java          ← Guest use-case handler (GRASP: Controller)
-│   │   └── ApiServer.java                   ← REST API port 8080 (GRASP: Controller)
-│   ├── model/
-│   │   ├── BaseEntity.java                  ← Abstract base for all entities (GRASP: Polymorphism)
-│   │   ├── Room.java                        ← (GRASP: Information Expert)
-│   │   ├── Reservation.java                 ← (GRASP: Information Expert, Creator)
-│   │   └── Customer.java                    ← (GRASP: Information Expert)
-│   └── repository/
-│       ├── IRepository.java                 ← Generic CRUD interface (GRASP: Protected Variation)
-│       ├── IRoomRepository.java             ← Room-specific interface, extends IRepository<Room>
-│       ├── ICustomerRepository.java         ← Customer-specific interface, extends IRepository<Customer>
-│       ├── IReservationRepository.java      ← Reservation-specific interface, extends IRepository<Reservation>
-│       ├── DatabaseManager.java             ← SQLite Singleton (GRASP: Pure Fabrication)
-│       ├── RoomRepository.java              ← implements IRoomRepository
-│       ├── ReservationRepository.java       ← implements IReservationRepository
-│       └── CustomerRepository.java          ← implements ICustomerRepository
-├── src/main/resources/
-│   ├── styles.css                           ← All UI styling
-│   ├── logo_main.png                        ← Company logo
-│   └── logo2.png
-├── INNsight.ico                             ← App icon for the .exe
+INNsight-Hotel-Management-System-in-Java/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/hotel/hotel_ai/
+│       │       ├── Main.java
+│       │       ├── ui/
+│       │       │   └── ChatbotUI.java
+│       │       ├── controller/
+│       │       │   ├── IAIService.java
+│       │       │   ├── AIEngine.java
+│       │       │   ├── RoomController.java
+│       │       │   ├── ReservationController.java
+│       │       │   ├── CustomerController.java
+│       │       │   └── ApiServer.java
+│       │       ├── model/
+│       │       │   ├── BaseEntity.java
+│       │       │   ├── Room.java
+│       │       │   ├── Reservation.java
+│       │       │   └── Customer.java
+│       │       └── repository/
+│       │           ├── IRepository.java
+│       │           ├── IRoomRepository.java
+│       │           ├── ICustomerRepository.java
+│       │           ├── IReservationRepository.java
+│       │           ├── DatabaseManager.java
+│       │           ├── RoomRepository.java
+│       │           ├── ReservationRepository.java
+│       │           └── CustomerRepository.java
+│       └── resources/
+│           ├── styles.css
+│           ├── logo_main.png
+│           └── logo2.png
 ├── pom.xml
-└── README.md
+├── README.md
 ```
+- `src/main/java/com/hotel/hotel_ai/` — Core Java source code, organized into UI, controllers, models, and repositories.
+- `src/main/resources/` — Static assets (styles and images) for the UI.
+- `pom.xml` — Maven project dependencies and configuration.
+- `README.md` — Project documentation.
+
+> This structure shows only what is versioned on GitHub. Build outputs and platform-specific files are intentionally excluded.
+<!-- PROJECT STRUCTURE SECTION ENDS -->
 
 ---
 
@@ -339,7 +271,7 @@ Run through this before every evaluation or demo:
 - ngrok is not running. Start it and update Botpress.
 
 **AI Chat shows "Error loading shareable webchat"**
-- The app now handles this automatically. It silently retries up to 3 times on load, and checks every 15 seconds during use. If the overlay does appear, click **Retry** — the chatbot will reload. As a last resort, click "Open in browser" in the overlay.
+- The app now handles this automatically. It silently retries up to 3 times on load, and checks every 15 seconds during use. If the overlay does appear, click **Retry** — the chatbot will reload. As...
 
 **Botpress books a room but database does not update**
 - ngrok URL has changed. Update the Execute Code cards in all three Botpress workflows and republish.
@@ -352,3 +284,4 @@ Run through this before every evaluation or demo:
 
 **jpackage command not found**
 - Make sure you are using JDK 21 and that the JDK `bin` folder is in your system PATH.
+
