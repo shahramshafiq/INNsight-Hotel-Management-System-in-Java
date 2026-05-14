@@ -1,0 +1,5 @@
+target/
+INNsight_App/
+.idea/
+*.db
+*.class
